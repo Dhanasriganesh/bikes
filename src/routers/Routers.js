@@ -11,6 +11,8 @@ import Honda from "../pages/Honda"
 import Hero from '../pages/Hero'
 import Bajaj from '../pages/Bajaj'
 import Tvs from '../pages/Tvs'
+import Tvsraider from '../pages/Tvsraider'
+import Price from '../components/Price'
 function Routers() {
   return (
     
@@ -27,7 +29,8 @@ function Routers() {
         <Route path='/hero' element={<Hero/>}/>
         <Route path='/tvs' element={<Tvs/>}/>
         <Route path='/bajaj' element={<Bajaj/>}/>
-
+        <Route path='/tvsraider' element={<Tvsraider/>}/>
+        <Route path='/price' element={<Price/>}/>
     </Routes>
   )
 }

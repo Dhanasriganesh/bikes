@@ -20,7 +20,7 @@ const Tvs = () => {
   return (
     <div className='bikes-container'>
       <div className='frow'>
-        <Bike brand="HONDA" srcName={tvs125} description="TVS Raider 125" link="/honda" />
+        <Bike brand="HONDA" srcName={tvs125} description="TVS Raider 125" link="/price" />
         <Bike brand="HERO" srcName={rtr310} description="TVS Apache RTR 310" link="/hero" />
         <Bike brand="TVS" srcName={ntorq} description="TVS Ntorq 125" link="/tvs" />
         <Bike brand="BAJAJ" srcName={rtr160} description="TVS Apache RTR 160" link="/bajaj" />

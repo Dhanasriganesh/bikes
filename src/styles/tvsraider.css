@@ -1,0 +1,30 @@
+/* BikePriceBreakdown.module.css */
+.bike-price-breakdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #bcbbbbd4;
+    padding: 1rem;
+    justify-content: center;
+    margin: 7rem;
+
+  }
+  
+  .bike-image-container {
+    flex: 0 0 30%;
+    margin-right: 1rem;
+  }
+  
+  .price-breakdown-box {
+    flex: 1;
+  }
+  
+  .price-breakdown-box p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .price-breakdown-box p:nth-child(even) {
+    text-align: right;
+  }
+  
