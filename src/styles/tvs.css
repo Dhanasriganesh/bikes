@@ -1,61 +1,92 @@
+.bikes-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.bikes-page a{
+  text-decoration: none;
+  color: #000;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  width: 250px;
+}
+
 .bikes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-  .frow {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Add space between items */
-    width: 100%;
-  }
+.frow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
 
-  .bike {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    background-color: #f9f9f9;
-    overflow: hidden; /* Hide overflow */
-    text-align: center;
-  }
-  .bike-link {
-    text-decoration: none; /* Remove underline from link */
-    color: inherit; /* Inherit color */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+.bike {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  text-align: center;
+}
 
-  .bikeimg {
-    width: 100%;
-    height: 150px; /* Maintain aspect ratio */
-    /* border-bottom: 1px solid #ccc; Optional: Add a bottom border to separate the image */
-  }
+.bike-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-  .separator {
-    border: 0;
-    height: 1px;
-    background-color: #000;
-    width: 80%;
-    margin: 20px 0; /* Add space around the separator */
-  }
+.bikeimg {
+  width: 100%;
+  height: 150px;
+}
 
-  .bike-description {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
-  }
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: #000;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.bike-description {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}

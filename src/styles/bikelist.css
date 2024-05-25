@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  border: 1px solid #faf7f7;
+  background: white;
+  box-shadow: 1px 1px 15px 3px gray;
 }
 
 .frow {
@@ -12,6 +15,7 @@
   flex-wrap: wrap;
   gap: 20px; /* Add space between items */
   width: 100%;
+  
 }
 
 .bike {
@@ -19,15 +23,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  background-color: #f9f9f9;
+  background: white;  
+  width: 250px; 
   overflow: hidden; /* Hide overflow */
   text-align: center;
+  border: 1px solid #faf7f7;
+  background: white;
+  box-shadow: 1px 1px 15px 3px gray;
 }
 
 .bike-link {

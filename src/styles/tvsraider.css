@@ -1,12 +1,13 @@
-/* BikePriceBreakdown.module.css */
+/* BikePriceBreakdown.module.css
 .bike-price-breakdown {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid #bcbbbbd4;
+    border: 1px solid #a3a2a2d4;
     padding: 1rem;
     justify-content: center;
     margin: 7rem;
+    margin-left: 14rem;
 
   }
   
@@ -16,7 +17,7 @@
   }
   
   .price-breakdown-box {
-    flex: 1;
+    flex: 0.5;
   }
   
   .price-breakdown-box p {
@@ -26,5 +27,75 @@
   
   .price-breakdown-box p:nth-child(even) {
     text-align: right;
+  }
+   */
+   .tvsraider-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #c0c4c8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(200, 198, 198, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  .nav a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .tvsraider-container h2 {
+    color: #063970;
+    margin-bottom: 20px;
+  }
+  .image-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bike-image {
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1f0875;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  .price-details {
+    text-align: left;
+  }
+  
+  .price-details p {
+    font-size: 16px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #103965;
   }
   

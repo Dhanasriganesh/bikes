@@ -35,7 +35,7 @@ function Footer()
               <div className='logo footer-logo'>
                 <h1>
                   <Link to="/home" className='d-flex align-items-center gap-2'>
-                    <i class="ri-bike-line"></i>
+                    <i class="ri-motorbike-fill"></i>
                     <span>Bike<br />Service</span>
                   </Link>
                 </h1>

@@ -24,6 +24,10 @@ const navLinks =
       path: '/contact',
       display: "Contact"
     },
+    {
+      path: '/offers',
+      display: "Offers"
+    },
   ]
 
 function Header() {
@@ -40,7 +44,7 @@ function Header() {
                 {/* <span>Need Help?</span> */}
 
                 <div className="header-midle">
-                  <h1>Garuda Motors</h1>
+                  <Link to="/"><h1>Garuda Motors</h1></Link>
                   <span className='header-top-help'>
                     <a href='tel:+91 9989197113'><i class="ri-phone-fill"></i> +91 9989197113</a>
                   </span>
@@ -69,7 +73,7 @@ function Header() {
               <div className='logo'>
                 <h1>
                   <Link to="/home" className='d-flex align-items-center gap-3'>
-                    <i class="ri-bike-line"></i>
+                    <i class="ri-motorbike-fill"></i>
                     <span>Bike<br />Service</span>
                   </Link>
                 </h1>
@@ -99,7 +103,7 @@ function Header() {
                   <h6>9am-9pm</h6>
                 </div>
               </div>
-            </Col>
+            </Col> 
 
 
             <Col lg='2' md='3' sm='0' className='d-flex align-items-center justify-content-center'>
@@ -122,10 +126,7 @@ align-items-center justify-content-end text-end">
       <div className="main-navbar">
         <Container>
           <div className='nav-wrapper d-flex align-items-center justify-content-between'>
-            <span className='mobile-menu'>
-              <i class="ri-menu-line" onClick={toggleMenu}></i>
-            </span>
-            <div className="navigation" ref={menuRef} onClick={toggleMenu}> 
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}> 
               <div className="menu">
                 {
                   navLinks.map((item, index) => (
@@ -134,6 +135,10 @@ align-items-center justify-content-end text-end">
                 }
               </div>
             </div>
+            <span className='mobile-menu'>
+              <i class="ri-menu-line" onClick={toggleMenu}></i>
+            </span>
+           
             {/* <div className="nav-right">
               <div className="search-box">
                 <input type="text" placeholder='Search' />
