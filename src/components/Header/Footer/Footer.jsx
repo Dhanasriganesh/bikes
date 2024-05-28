@@ -70,9 +70,8 @@ function Footer()
               <p className='office-info'>
               <a href='tel:+91 9989197113'><i class="ri-phone-fill"></i> +91 9989197113</a>
               </p>
-              <p className='office-info'>
-                <i class="ri-mail-line"></i>
-                garudamotors@gmail.com
+              <p className='office-info'>       
+                <a href="mailto:sreecnu22@gmail.com" class="ri-mail-line">sreecnu22@gmail.com</a>
               </p>
               <p className='office-info'>
                 <i class="ri-time-line"></i>
