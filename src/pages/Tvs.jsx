@@ -70,7 +70,7 @@ import {
 import "../styles/tvs.css";
 
 const bikesData = [
-  {srcName: xlks, description: "XL-100 HD KS BSVI", link: "/tvs" },
+  {srcName: xlks, description: "XL-100 HD KS BSVI", link: "/price" },
   {srcName: xlhd, description: "XL-100 HD i Touch BSVI", link: "/tvs" },
   {srcName: xlsbs, description: "XL-100 i.Touch SBS Winner Edition BSVI", link: "/tvs" },
   {srcName: xlcom, description: "XL-100 Comfort i.Touch BSVI", link: "/tvs" },
