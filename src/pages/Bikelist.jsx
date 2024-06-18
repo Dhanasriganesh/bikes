@@ -34,7 +34,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import activa from "../Assets/Images/actred.png";
+import activa from "../Assets/Images/UNICORN_160.png";
 import glamour from "../Assets/Images/glamourblack.png";
 import ntorq from "../Assets/Images/ntorq.png";
 import pulsar from "../Assets/Images/pulsar.png";

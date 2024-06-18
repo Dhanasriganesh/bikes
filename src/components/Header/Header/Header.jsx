@@ -357,7 +357,7 @@ function Header({ searchQuery, setSearchQuery }) {
                 </a>
               </button>
             </Col>
-            <Col lg='10' md='9' sm='8'>
+            {/* <Col lg='10' md='9' sm='8'>
               <div className='search-container'>
                 <i className="ri-search-line"></i>
                 <input
@@ -368,7 +368,7 @@ function Header({ searchQuery, setSearchQuery }) {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>

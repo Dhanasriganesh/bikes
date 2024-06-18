@@ -116,11 +116,11 @@ padding: 15px 0px;
 background: #000d6b;
 }
 
-.mobile-menu i{
+/* .mobile-menu i{
     color: white;
     font-size: 1.3rem;
     cursor: pointer;
-}
+} */
 
 .menu{
     display: flex;
@@ -166,11 +166,16 @@ font-size: 0.8rem;
     color: orange;
 }
 
-/* @media only screen and (max-width:768px){
-    .header-top,
+@media only screen and (max-width:768px){
+    /* .header-top,
     .header-middle,
     .nav-right{
         display: none;
+    } */
+    .mobile-menu i{
+        color: white;
+        font-size: 1.3rem;
+        cursor: pointer;
     }
 
     .mobile-menu{
@@ -204,4 +209,4 @@ display: none;
 .menu-active{
     display: block;
 }
-} */
+}

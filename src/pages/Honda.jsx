@@ -2,37 +2,74 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { RiSearchLine } from 'react-icons/ri';
-import activa from "../Assets/Images/actred.png";
-import glamour from "../Assets/Images/glamourblack.png";
-import ntorq from "../Assets/Images/ntorq.png";
-import pulsar from "../Assets/Images/pulsar.png";
-import tvs125 from "../Assets/Images/tvs125.png";
-import rtr310 from "../Assets/Images/RTR310.png";
-import rtr160 from "../Assets/Images/rtr160.png";
-import jupiter from "../Assets/Images/jupiter.png";
-import sport from "../Assets/Images/sport.png";
-import jup125 from "../Assets/Images/jup125.png";
-import comfort from "../Assets/Images/comfort.png";
-import heavy from "../Assets/Images/heavy.png";
-import pep from "../Assets/Images/pep.png";
-import star from "../Assets/Images/star.png";
-import x from "../Assets/Images/x.png";
+import {
+  ACTIVA_STD,
+  ACTIVA_DLX,
+  ACTIVA_SMART,
+  ACTIVA_125_DRUM,
+  ACTIVA_125_DRUM_ALLOY,
+  ACTIVA_125_DISC,
+  ACTIVA_125_SMART,
+  DIO_125_STD,
+  DIO_125_SMART,
+  DIO_STD,
+  DIO_DLX,
+  DIO_SMART,
+  ACTIVA_DLX_LTD,
+  ACTIVA_SMART_LTD,
+  DIO_125_REPSOL,
+  SP_125_DRUM,
+  SP_125_DIS,
+  SHINE_100,
+  SHINE_125_DRUM,
+  SHINE_125_DISK,
+  UNICORN_160,
+  SP_160_SINGLE_DISC,
+  SP_160_DOUBLE_DISC,
+  CD_110,
+  LIVO_DRUM,
+  LIVO_DISC,
+  HORNET_2_0,
+  CB_200X,
+  HORNET_REPSOL,
+  SP_125_SPORTS
+} from "../Assets/Images"
 import "../styles/tvs.css";
 
 const bikesData = [
-  { brand: "HONDA", srcName: tvs125, description: "TVS Raider 125", link: "/price" },
-  { brand: "HERO", srcName: rtr310, description: "TVS Apache RTR 310", link: "/hero" },
-  { brand: "TVS", srcName: ntorq, description: "TVS Ntorq 125", link: "/tvs" },
-  { brand: "BAJAJ", srcName: rtr160, description: "TVS Apache RTR 160", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: jupiter, description: "TVS Jupiter", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: sport, description: "TVS Sport", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: jup125, description: "TVS Jupiter 125", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: comfort, description: "TVS XL 100 Comfort", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: heavy, description: "TVS XL 100 Heavy Duty", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: pep, description: "TVS Scooty Pep Plus", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: star, description: "TVS Star City Plus", link: "/bajaj" },
-  { brand: "BAJAJ", srcName: x, description: "TVS X", link: "/bajaj" },
+  { srcName: ACTIVA_STD, description: 'ACTIVA STD', link: '/honda' },
+  { srcName: ACTIVA_DLX, description: 'ACTIVA DLX', link: '/honda' },
+  { srcName: ACTIVA_SMART, description: 'ACTIVA SMART', link: '/honda' },
+  { srcName: ACTIVA_125_DRUM, description: 'ACTIVA 125 DRUM', link: '/honda' },
+  { srcName: ACTIVA_125_DRUM_ALLOY, description: 'ACTIVA 125 DRUM ALLOY', link: '/honda' },
+  { srcName: ACTIVA_125_DISC, description: 'ACTIVA 125 DISC', link: '/honda' },
+  { srcName: ACTIVA_125_SMART, description: 'ACTIVA 125 SMART', link: '/honda' },
+  { srcName: DIO_125_STD, description: 'DIO 125 STD', link: '/honda' },
+  { srcName: DIO_125_SMART, description: 'DIO 125 SMART', link: '/honda' },
+  { srcName: DIO_STD, description: 'DIO STD', link: '/honda' },
+  { srcName: DIO_DLX, description: 'DIO DLX', link: '/honda' },
+  { srcName: DIO_SMART, description: 'DIO SMART', link: '/honda' },
+  { srcName: ACTIVA_DLX_LTD, description: 'ACTIVA DLX LTD', link: '/honda' },
+  { srcName: ACTIVA_SMART_LTD, description: 'ACTIVA SMART LTD', link: '/honda' },
+  { srcName: DIO_125_REPSOL, description: 'DIO 125 REPSOL', link: '/honda' },
+  { srcName: SP_125_DRUM, description: 'SP 125 DRUM', link: '/honda' },
+  { srcName: SP_125_DIS, description: 'SP 125 DISC', link: '/honda' },
+  { srcName: SHINE_100, description: 'SHINE 100', link: '/honda' },
+  { srcName: SHINE_125_DRUM, description: 'SHINE 125 DRUM', link: '/honda' },
+  { srcName: SHINE_125_DISK, description: 'SHINE 125 DISK', link: '/honda' },
+  { srcName: UNICORN_160, description: 'UNICORN 160', link: '/honda' },
+  { srcName: SP_160_SINGLE_DISC, description: 'SP 160 SINGLE DISC', link: '/honda' },
+  { srcName: SP_160_DOUBLE_DISC, description: 'SP 160 DOUBLE DISC', link: '/honda' },
+  { srcName: CD_110, description: 'CD 110', link: '/honda' },
+  { srcName: LIVO_DRUM, description: 'LIV DRUM', link: '/honda' },
+  { srcName: LIVO_DISC, description: 'LIVO DISC', link: '/honda' },
+  { srcName: HORNET_2_0, description: 'HORNET 2.0', link: '/honda' },
+  { srcName: CB_200X, description: 'CB 200X', link: '/honda' },
+  { srcName: HORNET_REPSOL, description: 'HORNET REPSOL', link: '/honda' },
+  { srcName: SP_125_SPORTS, description: 'SP 125 SPORTS', link: '/honda' },
 ];
+
+
 
 const Tvs = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -42,31 +79,34 @@ const Tvs = () => {
   );
 
   return (
-    <div className='bikes-page'>
+    <div>
+      <Link to="/honda"><h1>HONDA</h1></Link>
+      <div className='bikes-page'>
       
-      <div className='search-container'>
-        <IconContext.Provider value={{ className: 'search-icon' }}>
-          <RiSearchLine />
-        </IconContext.Provider>
-        <input
-          type="text"
-          placeholder="Search for a bike..."
-          className="search-bar"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-      </div>
-      <div className='bikes-container'>
-        <div className='frow'>
-          {filteredBikes.map((bike, index) => (
-            <Bike
-              key={index}
-              brand={bike.brand}
-              srcName={bike.srcName}
-              description={bike.description}
-              link={bike.link}
-            />
-          ))}
+        <div className='search-container'>
+          <IconContext.Provider value={{ className: 'search-icon' }}>
+            <RiSearchLine />
+          </IconContext.Provider>
+          <input
+            type="text"
+            placeholder="Search for a bike..."
+            className="search-bar"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
+        <div className='bikes-container'>
+          <div className='frow'>
+            {filteredBikes.map((bike, index) => (
+              <Bike
+                key={index}
+                brand={bike.brand}
+                srcName={bike.srcName}
+                description={bike.description}
+                link={bike.link}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

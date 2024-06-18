@@ -10,7 +10,7 @@
     padding-left: 40px;
 }
 
-/* @media only screen and (max-width:992x){
+@media only screen and (max-width:992x){
     .about-section-content h2{
         font-style: 1.5rem;
     }
@@ -40,4 +40,4 @@
         margin-top: 280px;
     }
 
-} */
+}

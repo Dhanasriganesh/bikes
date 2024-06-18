@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Routers from '../../../routers/Routers'
-
+import Tvs from '../../../pages/Hero'
 
 function Layout() {
+  const [searchQuery, setSearchQuery] = useState('');
   return (
    <Fragment>
-    <Header />
+    <Header  searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
     <div>
         <Routers />
     </div>

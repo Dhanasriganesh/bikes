@@ -30,7 +30,7 @@
     z-index: 10;
 }
 
-/* @media only screen and (max-width:992x){
+@media only screen and (max-width:992x){
     .find-bike-left{
         padding: 65px 22px;
     }
@@ -56,4 +56,4 @@
     font-size: 1rem;
    } 
 
-} */
+}
