@@ -37,7 +37,7 @@ import {
 import "../styles/tvs.css";
 
 const bikesData = [
-  { srcName: ACTIVA_STD, description: 'ACTIVA STD', link: '/honda' },
+  { srcName: ACTIVA_STD, description: 'ACTIVA STD', link: '/honda', price: "₹70,000" },
   { srcName: ACTIVA_DLX, description: 'ACTIVA DLX', link: '/honda' },
   { srcName: ACTIVA_SMART, description: 'ACTIVA SMART', link: '/honda' },
   { srcName: ACTIVA_125_DRUM, description: 'ACTIVA 125 DRUM', link: '/honda' },
@@ -69,8 +69,6 @@ const bikesData = [
   { srcName: SP_125_SPORTS, description: 'SP 125 SPORTS', link: '/honda' },
 ];
 
-
-
 const Tvs = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -80,21 +78,29 @@ const Tvs = () => {
 
   return (
     <div>
-      <Link to="/honda"><h1>HONDA</h1></Link>
-      <div className='bikes-page'>
-      
-        <div className='search-container'>
-          <IconContext.Provider value={{ className: 'search-icon' }}>
-            <RiSearchLine />
-          </IconContext.Provider>
-          <input
-            type="text"
-            placeholder="Search for a bike..."
-            className="search-bar"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
+      <div className='topper'>
+        <Link to="/honda"><h1>HONDA</h1></Link>
+        <div className='bookbut'>
+          <Link to="/book-now">
+            <button className="book-now-button">Book Now</button>
+          </Link>
         </div>
+       
+       
+          <div className='search-container'>
+            <IconContext.Provider value={{ className: 'search-icon' }}>
+              <RiSearchLine />
+            </IconContext.Provider>
+            <input
+              type="text"
+              placeholder="Search for a bike..."
+              className="search-bar"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+          </div>
+          <div className='bikes-page'>
         <div className='bikes-container'>
           <div className='frow'>
             {filteredBikes.map((bike, index) => (
@@ -104,6 +110,7 @@ const Tvs = () => {
                 srcName={bike.srcName}
                 description={bike.description}
                 link={bike.link}
+                price={bike.price} // Pass the price prop
               />
             ))}
           </div>
@@ -111,19 +118,19 @@ const Tvs = () => {
       </div>
     </div>
   );
-}
+};
 
-const Bike = ({ brand, srcName, description, link }) => {
+const Bike = ({ brand, srcName, description, link, price }) => {
   return (
     <div className='bike'>
       <Link to={link} className='bike-link'>
         <img src={srcName} className='bikeimg' alt={`${brand} bike`} />
         <hr className="separator" />
         <h1 className='bike-description'>{description}</h1>
-        {/* <div className="overlay">{brand}</div> */}
+        <p className='bike-price'>Price: {price}</p>
       </Link>
     </div>
-  )
-}
+  );
+};
 
 export default Tvs;

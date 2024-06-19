@@ -105,20 +105,27 @@ const Tvs = () => {
 
   return (
     <div>
-      <Link to="/hero"><h1>HERO</h1></Link>
-      <div className='bikes-page'>
-        <div className='search-container'>
-          <IconContext.Provider value={{ className: 'search-icon' }}>
-            <RiSearchLine />
-          </IconContext.Provider>
-          <input
-            type="text"
-            placeholder="Search for a bike..."
-            className="search-bar"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </div>
+      <div className='topper'>
+        <Link to="/hero"><h1>HERO</h1></Link>
+        <div className='bookbut'>
+            <Link to="/book-now">
+              <button className="book-now-button">Book Now</button>
+            </Link>
+          </div>
+          <div className='search-container'>
+            <IconContext.Provider value={{ className: 'search-icon' }}>
+              <RiSearchLine />
+            </IconContext.Provider>
+            <input
+              type="text"
+              placeholder="Search for a bike..."
+              className="search-bar"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+      </div>
+        <div className='bikes-page'>
         <div className='bikes-container'>
           <div className='frow'>
             {filteredBikes.map((bike, index) => (
@@ -128,6 +135,7 @@ const Tvs = () => {
                 srcName={bike.srcName}
                 description={bike.description}
                 link={bike.link}
+                price={bike.price}
               />
             ))}
           </div>
@@ -137,17 +145,17 @@ const Tvs = () => {
   );
 }
 
-const Bike = ({ brand, srcName, description, link }) => {
+const Bike = ({ brand, srcName, description, link, price }) => {
   return (
     <div className='bike'>
       <Link to={link} className='bike-link'>
         <img src={srcName} className='bikeimg' alt={`${brand} bike`} />
         <hr className="separator" />
         <h1 className='bike-description'>{description}</h1>
-        {/* <div className="overlay">{brand}</div> */}
+        <p className='bike-price'>Price: {price}</p>
       </Link>
     </div>
-  )
-}
+  );
+};
 
 export default Tvs;

@@ -13,6 +13,7 @@ import Tvs from '../pages/Tvs'
 import Tvsraider from '../pages/Tvsraider'
 import Price from '../components/Price'
 import Offers from '../pages/Offers'
+import Bike from '../pages/UserDetailsForm';
 function Routers() {
   return (
     
@@ -32,6 +33,7 @@ function Routers() {
         <Route path='/tvsraider' element={<Tvsraider/>}/>
         <Route path='/price' element={<Price/>}/>
         <Route path='/offers' element={<Offers/>}/>
+        <Route path='/book-now' element={<Bike/>}/>
     </Routes>
   )
 }

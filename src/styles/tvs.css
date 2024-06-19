@@ -14,17 +14,47 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.topper{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.topper a{
+  text-decoration: none;
+  color: black;
+}
+.book-now-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  /* margin: 10px; */
+  cursor: pointer;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.bookbut{
+  display: flex;
+  justify-content: center;
+}
+
+.book-now-button:hover {
+  background-color: #053463;
+}
 
 .search-icon {
   font-size: 24px;
   margin-right: 10px;
-  color: #007BFF;
+  color: #070808;
 }
 
 .search-bar {
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #007BFF;
+  border: 2px solid #070707;
   border-radius: 5px;
   width: 250px;
 }
