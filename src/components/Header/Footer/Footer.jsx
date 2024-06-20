@@ -8,10 +8,7 @@ const quickLinks=[
     path:'/about',
     display:"About"
   },
-  {
-    path:'#',
-    display:"Privacy Policy"
-  },
+  
   {
     path:'/bikes',
     display:"Bike Listing"

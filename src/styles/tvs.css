@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 20px;
 }
-.bikes-page a{
+.bikes-page a {
   text-decoration: none;
   color: #000;
 }
@@ -14,12 +14,12 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.topper{
+.topper {
   display: flex;
   justify-content: space-evenly;
   padding-top: 10px;
 }
-.topper a{
+.topper a {
   text-decoration: none;
   color: black;
 }
@@ -29,14 +29,13 @@
   align-items: center;
   padding: 10px 20px;
   font-size: 16px;
-  /* margin: 10px; */
   cursor: pointer;
   background-color: #1c1c1c;
   color: white;
   border: none;
   border-radius: 5px;
 }
-.bookbut{
+.bookbut {
   display: flex;
   justify-content: center;
 }
@@ -119,4 +118,104 @@
   font-size: 20px;
   font-weight: 600;
   color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .bikes-page {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-container {
+    justify-content: center;
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+  .topper {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  .book-now-button {
+    width: 100%;
+    padding: 10px;
+  }
+  .frow {
+    gap: 15px;
+  }
+  .bike {
+    width: 200px;
+  }
+  .bikeimg {
+    height: 120px;
+  }
+  .bike-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 200px;
+  }
+  .bikes-container{
+    display: flex;
+    box-shadow: none;
+  }
+  .bike {
+    display: flex;
+    width: 180px;
+  }
+  .bikeimg {
+    height: 100px;
+  }
+  .bike-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-container {
+   display: flex;
+   padding-top: 10px;
+   /* gap: 10px; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+  .frow{
+    display: flex;
+    gap: 10px;
+  }
+  .search-icon{
+    display: flex;
+    width: ;
+  }
+  .topper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .book-now-button {
+    width: 100%;
+  }
+  .bike {
+    display: flex;
+    width: 100%;
+    margin: 0px 0;
+  }
+  .bikes-page{
+    display: flex;
+    /* margin-top: 50px; */
+    box-shadow: #ccc;
+  }
+  .bikeimg {
+    height: 130px;
+    width: 100%;
+  }
+  .bike-description {
+    font-size: 18px;
+  }
 }

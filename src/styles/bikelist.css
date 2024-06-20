@@ -15,7 +15,6 @@
   flex-wrap: wrap;
   gap: 20px; /* Add space between items */
   width: 100%;
-  
 }
 
 .bike {
@@ -84,4 +83,62 @@
 .bike:hover .overlay {
   top: 0; /* Move the overlay down to reveal it */
   opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .bike {
+    width: 220px; 
+  }
+  .bikeimg {
+    height: 220px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bikes-container {
+    padding: 15px;
+  }
+  .bike {
+    width: 200px;
+  }
+  .bikeimg {
+    height: 200px;
+  }
+  .bike-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bike {
+    width: 180px;
+  }
+  .bikeimg {
+    height: 180px;
+  }
+  .bike-description {
+    font-size: 16px;
+  }
+  .separator {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .bike {
+    width: 160px;
+  }
+  .bikeimg {
+    height: 160px;
+  }
+  .bike-description {
+    font-size: 14px;
+  }
+  .separator {
+    width: 100%;
+  }
+  .overlay {
+    font-size: 12px;
+  }
 }

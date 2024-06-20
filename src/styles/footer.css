@@ -1,53 +1,145 @@
-.footer{
+.footer {
     background: #000d6b;
     padding-top: 50px;
     padding-bottom: 15px;
-
-}
-.foot{
+  }
+  
+  .foot {
     display: flex;
     justify-content: space-between;
-}
-.footer-logo i{
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo i {
     color: white;
     font-weight: 500;
-}
-.footer-logo span{
+  }
+  
+  .footer-logo span {
     color: white;
     font-weight: 500;
-}
-.footer-logo-content{
+  }
+  
+  .footer-logo-content {
     color: white;
     margin-top: 15px;
     line-height: 30px;
-
-}
-.quick-link{
+  }
+  
+  .quick-link {
     border: none !important;
     background: transparent !important;
-}
-.quick-link a{
+  }
+  
+  .quick-link a {
     color: white;
     text-decoration: none;
     font-weight: 300;
-}
-.quick-link a:hover{
+  }
+  
+  .quick-link a:hover {
     color: orange;
-}
-.footer-link-title{
+  }
+  
+  .footer-link-title {
     color: white;
-}
-.office-info{
+  }
+  
+  .office-info {
     color: white;
     font-weight: 300;
-}
-.footer-bottom{
+  }
+  
+  .footer-bottom {
     border-top: 1px solid darkblue;
     color: white;
     display: flex;
     justify-content: center;
-}
-.office-info a{
+    padding-top: 15px;
+  }
+  
+  .office-info a {
     text-decoration: none;
     color: white;
-}
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .foot {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-logo,
+    .quick-link,
+    .office-info {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .footer-logo i,
+    .footer-logo span {
+      font-size: 18px;
+    }
+    .footer-logo-content {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .quick-link a {
+      font-size: 16px;
+    }
+    .footer-link-title {
+      font-size: 18px;
+    }
+    .office-info {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-logo i,
+    .footer-logo span {
+      font-size: 16px;
+    }
+    .footer-logo-content {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .quick-link a {
+      font-size: 14px;
+    }
+    .footer-link-title {
+      font-size: 16px;
+    }
+    .office-info {
+      font-size: 14px;
+    }
+    .footer-bottom {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-logo i,
+    .footer-logo span {
+      font-size: 14px;
+    }
+    .footer-logo-content {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .quick-link a {
+      font-size: 12px;
+    }
+    .footer-link-title {
+      font-size: 14px;
+    }
+    .office-info {
+      font-size: 12px;
+    }
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  

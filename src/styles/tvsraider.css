@@ -39,7 +39,8 @@
     background-color: #f9f9f9;
     text-align: center;
   }
-  .nav a{
+  
+  .nav a {
     text-decoration: none;
     color: black;
   }
@@ -48,6 +49,7 @@
     color: #063970;
     margin-bottom: 20px;
   }
+  
   .image-slider {
     position: relative;
     display: flex;
@@ -62,6 +64,7 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
   .arrow {
     background: none;
     border: none;
@@ -81,6 +84,7 @@
   .right-arrow {
     right: 10px;
   }
+  
   .price-details {
     text-align: left;
   }
@@ -98,3 +102,30 @@
     margin-top: 15px;
     color: #103965;
   }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .tvsraider-container {
+      padding: 15px;
+    }
+    
+    .bike-image {
+      width: 100%;
+      height: auto;
+    }
+    
+    .arrow {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .tvsraider-container {
+      margin: 20px auto;
+    }
+    
+    .price-details p {
+      font-size: 14px;
+    }
+  }
+  

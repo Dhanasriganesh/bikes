@@ -9,6 +9,9 @@
     width: 400px;
     padding-left: 40px;
 }
+.activa-blue{
+    width: 250px;
+}
 
 @media only screen and (max-width:992x){
     .about-section-content h2{
@@ -26,18 +29,20 @@
     }
 }
 
-@media only screen and (max-width:768x){
+@media only screen and (max-width:320px){
     .about-img{
         margin-top: 30px;
+        width: 10px;
     }
-    .about-section{
-        margin-top: 250px;
+    .about-section-image{
+        width: 10px;
+        /* margin-top: 250px; */
     }
 }
 
-@media only screen and (max-width:576x){
+/* @media only screen and (max-width:576x){
     .about-section{
         margin-top: 280px;
     }
 
-}
+} */
