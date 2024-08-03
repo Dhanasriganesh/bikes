@@ -123,7 +123,16 @@
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .bikes-page {
-    padding: 15px;
+    /* padding: 15px; */
+  }
+  .bike-img{
+    width: 10px;
+  }
+  .bikes-container{
+    display: flex;
+  }
+  .frow{
+    display: flex;
   }
 }
 

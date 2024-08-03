@@ -43,39 +43,41 @@ function Footer()
                 Always with you In near with you
               </p>
             </Col>
-            <Col lg="2" md="4" sm="6">
+            <div className='foott'>
+              <Col lg="2" md="4" sm="6">
+                <div className="mb-4">
+                  <h5 className='footer-link-title'>Quick Links</h5>
+                <ListGroup>
+                  {
+                    quickLinks.map((item,index)=>(
+                      <ListGroupItem key={index} className='p-0 mt-3 quick-link'>
+                        <Link to={item.path}>{item.display}</Link>
+                      </ListGroupItem>
+                    ))
+                  }
+                </ListGroup>
+                </div>
+              </Col>
+                        <Col lg="3" md="4" sm="6">
               <div className="mb-4">
-                <h5 className='footer-link-title'>Quick Links</h5>
-              <ListGroup>
-                {
-                  quickLinks.map((item,index)=>(
-                    <ListGroupItem key={index} className='p-0 mt-3 quick-link'>
-                      <Link to={item.path}>{item.display}</Link>
-                    </ListGroupItem>
-                  ))
-                }
-              </ListGroup>
+                <h5 className='footer-link-title mb-4'>Head Office</h5>
+                <p className='office-info'>
+                <Link to='https://www.google.com/maps?q=17.4081382751465,78.5697860717773' target='_blank'> <i class="ri-map-pin-line"></i>
+                  122, Swaroop Nagar Rd, Swaroop Nagar, Sai Nagar, Boduppal, Hyderabad, Telangana 500039
+                  </Link></p>
+                <p className='office-info'>
+                <a href='tel:+91 9989197113'><i class="ri-phone-fill"></i> +91 9989197113</a>
+                </p>
+                <p className='office-info'>
+                  <a href="mailto:sreecnu22@gmail.com" class="ri-mail-line">sreecnu22@gmail.com</a>
+                </p>
+                <p className='office-info'>
+                  <i class="ri-time-line"></i>
+                  Mon - Sun : 9:00 - 9:00
+                </p>
               </div>
-            </Col>
-          <Col lg="3" md="4" sm="6">
-            <div className="mb-4">
-              <h5 className='footer-link-title mb-4'>Head Office</h5>
-              <p className='office-info'>
-              <Link to='https://www.google.com/maps?q=17.4081382751465,78.5697860717773' target='_blank'> <i class="ri-map-pin-line"></i>
-                122, Swaroop Nagar Rd, Swaroop Nagar, Sai Nagar, Boduppal, Hyderabad, Telangana 500039
-                </Link></p>
-              <p className='office-info'>
-              <a href='tel:+91 9989197113'><i class="ri-phone-fill"></i> +91 9989197113</a>
-              </p>
-              <p className='office-info'>       
-                <a href="mailto:sreecnu22@gmail.com" class="ri-mail-line">sreecnu22@gmail.com</a>
-              </p>
-              <p className='office-info'>
-                <i class="ri-time-line"></i>
-                Mon - Sun : 9:00 - 9:00
-              </p>
+                        </Col>
             </div>
-          </Col>
           
           <Col lg="12">
           <div className="footer-bottom">

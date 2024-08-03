@@ -88,22 +88,25 @@
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .bike {
-    width: 220px; 
+    width: 120px; 
   }
   .bikeimg {
-    height: 220px;
+    height: 120px;
   }
 }
 
 @media (max-width: 992px) {
+  .hh{
+    display: flex;
+  }
   .bikes-container {
     padding: 15px;
   }
   .bike {
-    width: 200px;
+    width: 120px;
   }
   .bikeimg {
-    height: 200px;
+    height: 120px;
   }
   .bike-description {
     font-size: 18px;

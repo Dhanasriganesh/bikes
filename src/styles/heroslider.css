@@ -53,11 +53,12 @@
 
 @media only screen and (max-width:992px) {
     .slider-item{
-        height: 530px;
+        height: 350px;
         width: 100%;
     }
     .slider-content{
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        padding-top: 50px;
     }
     .slider-content h1{
         font-size: 2rem;
@@ -66,7 +67,7 @@
 }
 @media only screen and (max-width:320px){
     .slider-item{
-        height: 450px;
+        height: 300px;
         width: 100%;
     }
     .slider-content h1{

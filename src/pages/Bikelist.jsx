@@ -44,10 +44,14 @@ const Bikelist = () => {
   return (
     <div className='bikes-container'>
       <div className='frow'>
-        <Bike brand="HONDA" srcName={activa} description="HONDA" link="/honda" />
-        <Bike brand="HERO" srcName={glamour} description="HERO" link="/hero" />
-        <Bike brand="TVS" srcName={ntorq} description="TVS" link="/tvs" />
-        <Bike brand="BAJAJ" srcName={pulsar} description="BAJAJ" link="/bajaj" />
+        <div className='hh'>
+          <Bike brand="HONDA" srcName={activa} description="HONDA" link="/honda" />
+          <Bike brand="HERO" srcName={glamour} description="HERO" link="/hero" />
+        </div>
+        <div className='hh'>
+          <Bike brand="TVS" srcName={ntorq} description="TVS" link="/tvs" />
+          <Bike brand="BAJAJ" srcName={pulsar} description="BAJAJ" link="/bajaj" />
+        </div>
       </div>
     </div>
   );

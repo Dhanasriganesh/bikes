@@ -209,6 +209,13 @@ display: none;
 .menu-active{
     display: block;
 }
+.header-middle{
+    display: grid;
+    align-items: end;
+    justify-content: start;
+    
+
+}
 }
 
 @media only screen and (max-width:320px){
